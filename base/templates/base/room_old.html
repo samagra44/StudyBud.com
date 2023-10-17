@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% extends "main.html" %}
+        {%block content%}
+        <div>
+            <div>
+        <h1>{{room.name}}</h1>
+        <p>{{room.description}}</p>
+
+        <div>
+            <h3>Conversation</h3>
+            <hr>
+            {% for message in room_messages  %}
+            <div>
+                {% if request.user == message.user %}
+                <a href="{% url "delete-message" message.id %}">Delete</a>
+                {% endif %}
+                <small>@{{message.user}}  {{message.creted|timesince}} ago</small>
+                <p>{{message.body}}</p>
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+        {% if request.user.is_authenticated %}
+        <div>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="text" name="body" placeholder="message here"/>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+
+    <div>
+        <h3>Participants</h3>
+        <hr>
+        {% for user in participants %}
+        <div>
+            <p>@{{user.username}}</p>
+        </div>
+        
+        {% endfor %}
+    </div>
+    </div>
+        {%endblock content%}
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
