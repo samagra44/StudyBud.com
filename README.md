@@ -29,13 +29,11 @@
 ### Clone the Repository:
 ```
 git clone https://github.com/samagra44/StudyBud.com.git
-
 ```
 
  ### Change the directory:
  ```
  cd StudyBuddy
-
  ```
 
 ### Virtual Environment:
@@ -44,19 +42,30 @@ git clone https://github.com/samagra44/StudyBud.com.git
 
 ```
 python -m venv venv
-
 ```
 
 - **Activate the venv Environment:**
 ```
 source venv/bin/activate
-
 ```
 
 - **Activate the venv Environment on Windows:**
 ```
 venv\Scripts\activate
+```
 
+- **Create the virtual environment using conda command:**
+```
+conda create -n venv
+```
+**Activate the venv Environment:**  
+```
+conda activate venv/
+```
+
+**Verify that the virtual environment was activated correctly by running the following command:**
+```
+conda info
 ```
 
 ### Install Dependencies:
@@ -64,7 +73,6 @@ venv\Scripts\activate
 **Install the required Python packages:**
 ```
 pip install -r requirements.txt
-
 ```
 
 ### Database Setup:
@@ -72,7 +80,6 @@ pip install -r requirements.txt
 **Apply database migrations to set up the database schema:**
 ```
 python manage.py migrate
-
 ```
 
 ### Create an Admin User:
@@ -80,7 +87,6 @@ python manage.py migrate
 **Create an admin superuser to manage the platform:**
 ```
 python manage.py createsuperuser
-
 ```
 
 ### Launch the Development Server:
@@ -88,7 +94,6 @@ python manage.py createsuperuser
 **Start the development server:**
 ```
 python manage.py runserver
-
 ```
 
 ### Access the Application:
