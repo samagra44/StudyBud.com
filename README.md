@@ -123,22 +123,28 @@ python manage.py runserver
 **This project is licensed under the MIT License, which means you are free to modify and use it according to your requirements. For a more in-depth understanding of the project and detailed usage instructions, consult the project's documentation and explore the codebase. We hope StudyBuddy enhances your study collaboration experience and provides a valuable tool for learners.**
 
 ## Project Images:
-- User Profile:
+- Edit User Profile:
+
 ![Screenshot 2024-01-10 195709](https://github.com/samagra44/StudyBud.com/assets/77968722/4469f0eb-353d-4c9a-ad16-b057dc7e17d3)
 
 - User Profile:
+
 ![Screenshot 2024-01-10 200328](https://github.com/samagra44/StudyBud.com/assets/77968722/7644d37c-a634-42c2-a639-697fe1f8554c)
 
 - All rooms:
+
 ![Screenshot 2024-01-10 200445](https://github.com/samagra44/StudyBud.com/assets/77968722/905786da-a7df-46d0-bb9c-2318a09059bd)
 
 - Create room:
+
 ![Screenshot 2024-01-10 200515](https://github.com/samagra44/StudyBud.com/assets/77968722/6a9dff8e-f9ce-496f-a898-83f78aec2ff5)
 
 - Join Room:
+
 ![Screenshot 2024-01-10 200554](https://github.com/samagra44/StudyBud.com/assets/77968722/dca5070d-d311-48e8-9fd5-ee77f1b358a2)
 
 - Search Romm:
+
 ![Screenshot 2024-01-10 200626](https://github.com/samagra44/StudyBud.com/assets/77968722/cf87b951-3148-4d47-9e77-b6cd86a852b2)
 
 
