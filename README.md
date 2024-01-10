@@ -1,4 +1,4 @@
-![s3](https://github.com/samagra44/StudyBud.com/assets/77968722/329d032c-15ce-4c98-8504-80b3d75a98cb)# StudyBuddy: A Study-Oriented Social Platform
+# StudyBuddy: A Study-Oriented Social Platform (Discord Clone)
 
 **StudyBuddy is a web application developed using Django that serves as a study-oriented social platform and chat system, with features akin to a Discord clone, coupled with a study room search engine. This README provides an in-depth description of the project, guiding you through the installation process and offering an extensive overview of its functionalities.**
 
